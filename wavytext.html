@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavy text</title>
+    <style>
+        *{
+            margin: 0 0;
+            padding: 0 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body{display: flex;
+        background: black;
+        color: white;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .wave{
+        position: relative;
+        -webkit-box-reflect: below -12px linear-gradient(transparent,rgba(0,0,0,0.8));
+    }
+    .wave span{
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: #fff;
+        animation: animate 1s ease-in-out infinite;
+        animation-delay: calc(0.1s*var(--i));
+    }
+    @keyframes animate {
+        0%{
+            transform: translateY(0px);
+        }
+        20%{
+            transform: translateY(-20px);
+        }
+        40%,100%{
+            transform: translateY(0px);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="wave">
+        <span style="--i:1">L</span>
+        <span style="--i:2">o</span>
+        <span style="--i:3">a</span>
+        <span style="--i:4">d</span>
+        <span style="--i:5">i</span>
+        <span style="--i:6">n</span>
+        <span style="--i:7">g</span>
+        <span style="--i:8">.</span>
+        <span style="--i:9">.</span>
+        <span style="--i:10">.</span>
+    </div>
+</body>
+</html>

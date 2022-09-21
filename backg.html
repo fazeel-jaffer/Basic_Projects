@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        body {
+            background: rgba(8, 193, 218, 0.7);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            justify-items: center;
+            grid-gap: 8px;
+        }
+        .item {
+            border: 3px solid black;
+            border-radius: 50%;
+            text-align: center;
+        }
+        a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        #item1 {
+            background: red;
+            color: red;
+            cursor: pointer;
+        }
+        #item2 {
+            background: blue;
+            color: blue;
+            cursor: pointer;
+        }
+
+        #item3 {
+            background: green;
+            color: green;
+            cursor: pointer;
+        }
+
+        #item4 {
+            background: grey;
+            color: grey;
+            cursor: pointer;
+        }
+
+        #item5 {
+            background: yellow;
+            color: yellow;
+            cursor: pointer;
+        }
+
+        #item6 {
+            background: black;
+            color: black;
+            cursor: pointer;
+        }
+        p{
+            color:whitesmoke;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <a onclick="bgchange(id)" id="item1">red</a>
+        </div>
+        <div class="item">
+            <a onclick="bgchange(id)" id="item2">blue</a>
+        </div>
+        <div class="item">
+            <a onclick="bgchange(id)" id="item3">green</a>
+        </div>
+        <div class="item">
+            <a onclick="bgchange(id)" id="item4">grey</a>
+        </div>
+        <div class="item">
+            <a onclick="bgchange(id)" id="item5">yellow</a>
+        </div>
+        <div class="item">
+            <a onclick="bgchange(id)" id="item6">black</a>
+        </div>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nobis eligendi ratione quam, quisquam laboriosam
+        impedit sunt optio unde. Ab ipsum inventore nulla possimus a odit, tempora repellat voluptatibus veniam
+        suscipit. Dicta nesciunt odit illo deserunt. Laboriosam ipsum consequatur qui soluta, officiis deserunt sequi
+        ipsam sed quos dicta blanditiis eaque id sapiente reiciendis facere officia dolore dolores, in aspernatur quam.
+        Magnam quae sequi eos est eligendi corporis, impedit voluptate nulla accusantium? Aperiam, eaque. Ipsum nobis
+        eum nostrum alias, voluptatibus necessitatibus enim sunt optio eveniet temporibus at quos quaerat delectus
+        cumque odit voluptates. Consectetur cum qui sequi necessitatibus error pariatur, non fuga autem ut et tempora
+        temporibus in atque at est, rerum quis nobis placeat, eius iusto veritatis. Nesciunt et dignissimos, quos cum
+        repellat odit! Praesentium eum itaque voluptatum architecto, molestiae doloremque rem molestias maiores, quam
+        totam quisquam a. Natus atque odio id aperiam aspernatur qui non blanditiis nesciunt enim illum aut accusamus,
+        earum tempore incidunt ratione, dolore porro in magni iste sed obcaecati veniam tenetur? Molestiae, unde
+        quisquam beatae eos nihil at libero harum nostrum, molestias nulla sed assumenda adipisci? Velit, totam!
+        Cupiditate dignissimos deserunt soluta blanditiis assumenda suscipit tempore amet accusantium rerum, quos beatae
+        alias voluptatibus, quo tempora. Aut ipsam accusamus pariatur tempore nulla totam id itaque molestiae architecto
+        quod mollitia libero nihil commodi ducimus in, culpa et a ut sequi asperiores! Sapiente dolores beatae iste
+        totam sed incidunt architecto consequuntur eligendi voluptates, consectetur esse quae quidem est repudiandae eum
+        autem! Quia aliquid illum voluptatibus repellat enim temporibus sint!</p>
+    <script>
+        function bgchange(id) {
+            document.body.style.background = document.getElementById(id).innerHTML;
+        }
+    </script>
+</body>
+
+</html>
